@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drop-down List</title>
+    <style>
+     	*{margin: 0px; padding: 0px;}
+	.menu ul{list-style: none;}
+	.menu ul li{background: rgb(77, 131, 75); border: 1px solid white; width: 240px; height: 45px; line-height: 45px; float: left;text-align: center; position: relative;}
+	.menu ul li a{text-decoration: none; font-size: 20px; color: black;}
+	.menu ul li a:hover{color: blue; font-weight: bold;}
+	.menu ul ul{position: absolute; display: none;}
+	.menu ul li:hover > ul{display: block;}
+	.menu ul ul ul{margin-left: 240px; top: 0px;}
+    </style>
+</head>
+<body>
+    <div class="menu">
+            <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">WEB DESIGNING<span><img src="icon.ico"/></span></a>
+                        <ul>
+                            <li><a href="#">HTML5</a></li>
+                            <li><a href="#">CSS3<span><img src="icon.ico"/></span></a>
+                                <ul>
+                                    <li><a href="#">FIRST PROJECT</a></li>
+                                    <li><a href="#">SECOND PROJECT<span><img src="icon.ico"/></span></a>
+                                        <ul>
+                                            <li><a>ANOTHER PROJECT</a></li>
+                                            <li><a>ANOTHER PROJECT</a></li>
+                                            <li><a>ANOTHER PROJECT</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">THIRD PROJECT</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">JAVASCRIPT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">WEB DEVELOPMENT</a></li>
+                    <li><a href="#">MS:OFFICE</a></li>
+                    <li><a href="#">GRAPHIC DESIGNINGG<span><img src="icon.ico"/></span></a>
+                        <ul>
+                            <li><a href="#">PHOTOSHOP</a></li>
+                            <li><a href="#">CORAL DRAW<span><img src="icon.ico"/></span></a>
+                                <ul>
+                                    <li><a href="#">FIRST PROJECT</a></li>
+                                    <li><a href="#">SECOND PROJECT</a></li>
+                                    <li><a href="#">THIRD PROJECT</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">ILLUSTRATOR</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ABOUT US</a></li>
+                </ul>
+    </div>
+</body>
+</html>
